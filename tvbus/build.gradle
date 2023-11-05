@@ -1,0 +1,17 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 28
+        ndk { abiFilters "armeabi-v7a" }
+    }
+}
+
+dependencies {
+    implementation project(':catvod')
+}
